@@ -14,30 +14,30 @@
 <meta property="og:image:alt" content="Numeraldo. Expanding world numeracy one number at a time. $14,250 raised to date, 40+ students taught weekly, 3 partner organizations.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://numeraldo.org/assets/og-numeraldo.png">
-<meta name="theme-color" content="#EFF2F0" media="(prefers-color-scheme:light)">
-<meta name="theme-color" content="#0C1412" media="(prefers-color-scheme:dark)">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme:light)">
+<meta name="theme-color" content="#070E26" media="(prefers-color-scheme:dark)">
 <link rel="canonical" href="https://numeraldo.org/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230E6E5C'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='18' font-weight='600' fill='%23EFF2F0' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="assets/numeraldo-mark.svg" type="image/svg+xml">
 <title>Numeraldo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
   :root{
-    --paper:#EFF2F0;
-    --surface:#FFFFFF;
-    --surface-2:#E6EBE8;
-    --ink:#0F1A17;
-    --muted:#566B65;
-    --line:#D3DCD8;
-    --line-strong:#B6C4BF;
-    --accent:#0E6E5C;
-    --accent-ink:#0A473C;
-    --accent-soft:#D7E9E3;
+    --paper:#FFFFFF;
+    --surface:#F4F5F9;
+    --surface-2:#E9EBF2;
+    --ink:#070E26;
+    --muted:#4D5573;
+    --line:#DADDE7;
+    --line-strong:#B9BED0;
+    --accent:#070E26;
+    --accent-ink:#070E26;
+    --accent-soft:#E6E8F0;
     --gold:#8A6212;
     --gold-soft:#EDE1C6;
-    --lcd:#0E6E5C;
-    --shadow:0 1px 2px rgba(15,26,23,.06), 0 12px 28px -18px rgba(15,26,23,.35);
+    --lcd:#070E26;
+    --shadow:0 1px 2px rgba(7,14,38,.06), 0 12px 28px -18px rgba(7,14,38,.35);
 
     --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
     --body:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -47,36 +47,36 @@
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --paper:#0C1412;
-      --surface:#141E1B;
-      --surface-2:#1B2723;
-      --ink:#E9EFEC;
-      --muted:#9AACA6;
-      --line:#25332E;
-      --line-strong:#33453F;
-      --accent:#4ECFAE;
-      --accent-ink:#A6EBD8;
-      --accent-soft:#16302A;
+      --paper:#070E26;
+      --surface:#0E1733;
+      --surface-2:#141E3F;
+      --ink:#FFFFFF;
+      --muted:#A9B0C7;
+      --line:#1E2847;
+      --line-strong:#2B3760;
+      --accent:#FFFFFF;
+      --accent-ink:#FFFFFF;
+      --accent-soft:#18224A;
       --gold:#E0B75F;
       --gold-soft:#2C2517;
-      --lcd:#4ECFAE;
+      --lcd:#FFFFFF;
       --shadow:0 1px 2px rgba(0,0,0,.5), 0 18px 34px -22px rgba(0,0,0,.9);
     }
   }
   :root[data-theme="dark"]{
-    --paper:#0C1412;
-    --surface:#141E1B;
-    --surface-2:#1B2723;
-    --ink:#E9EFEC;
-    --muted:#9AACA6;
-    --line:#25332E;
-    --line-strong:#33453F;
-    --accent:#4ECFAE;
-    --accent-ink:#A6EBD8;
-    --accent-soft:#16302A;
+    --paper:#070E26;
+    --surface:#0E1733;
+    --surface-2:#141E3F;
+    --ink:#FFFFFF;
+    --muted:#A9B0C7;
+    --line:#1E2847;
+    --line-strong:#2B3760;
+    --accent:#FFFFFF;
+    --accent-ink:#FFFFFF;
+    --accent-soft:#18224A;
     --gold:#E0B75F;
     --gold-soft:#2C2517;
-    --lcd:#4ECFAE;
+    --lcd:#FFFFFF;
     --shadow:0 1px 2px rgba(0,0,0,.5), 0 18px 34px -22px rgba(0,0,0,.9);
   }
 
@@ -110,7 +110,9 @@
   }
   .bar{display:flex;align-items:center;gap:18px;min-height:62px;flex-wrap:wrap;padding-block:8px}
   .brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
-  .logo{display:block;height:44px;width:auto;border-radius:5px}
+  .logo{display:block;width:auto;height:44px;flex:none}
+  .wordmark{font-family:var(--body);font-weight:600;font-size:21px;line-height:1.1;letter-spacing:-.01em}
+  .wordmark small{display:block;font-weight:400;font-size:12.5px;color:var(--muted);letter-spacing:0}
   nav.main{display:flex;gap:20px;flex-wrap:wrap;align-items:center;min-width:0}
   nav.main a{
     font-family:var(--mono);font-size:12px;letter-spacing:.09em;text-transform:uppercase;
@@ -347,7 +349,8 @@
 <header class="site">
   <div class="wrap bar">
     <a class="brand" href="#top">
-      <img class="logo" src="assets/numeraldo-logo.webp" width="434" height="197" alt="Numeraldo, a 501(c)(3) organization">
+      <picture><source srcset="assets/numeraldo-mark-tall-dark.svg" media="(prefers-color-scheme: dark)"><img class="logo" src="assets/numeraldo-mark-tall.svg" width="19" height="44" alt=""></picture>
+      <span class="wordmark">Numeraldo<small>A 501(c)(3) Organization</small></span>
     </a>
     <nav class="main">
       <a href="#mission">Mission</a>
@@ -759,13 +762,13 @@ const NUMERALDO = {
     {
       name: "Casio Calculator Access Initiative",
       amount: 5800,
-      color: "#0E6E5C",
+      color: "#1F3A93",
       desc: "Distribution, onboarding sessions, and classroom loaner sets for donated calculators."
     },
     {
       name: "Weekly Numeracy Club at the Boys & Girls Club",
       amount: 4300,
-      color: "#2E9E7E",
+      color: "#5A78D6",
       desc: "Materials, workbooks, and instructor support for weekly sessions in Lower Bergen County."
     },
     {
@@ -777,7 +780,7 @@ const NUMERALDO = {
     {
       name: "Curriculum & Operations",
       amount: 1550,
-      color: "#6C7F79",
+      color: "#7A8199",
       desc: "Lesson development, insurance, transportation, and the cost of keeping the lights on."
     }
   ]

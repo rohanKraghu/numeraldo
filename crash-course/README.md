@@ -34,8 +34,8 @@ If you add a page to the folder, add it to all four places.
 Every internal link and asset reference is **relative** (`teens.html`, `assets/course.css`); there
 are no absolute `/` paths anywhere. That means the same files work unchanged at:
 
-- `rohankraghu.github.io/numeraldo/crash-course/` (where it lives today)
-- `numeraldo.org/crash-course/` (once the Numeraldo site moves to its own domain)
+- `rohankraghu.github.io/numeraldo/crash-course/` (redirects to numeraldo.org)
+- `numeraldo.org/crash-course/` (where it lives today)
 - `learn.numeraldo.org/` or `money.numeraldo.org/` (a subdomain root, later)
 - a local folder, a USB stick, or any static host
 
